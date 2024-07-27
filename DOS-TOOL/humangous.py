@@ -37,7 +37,7 @@ def display_ascii_art():
     # to their knees by exhausting the resource pool. It is meant for research purposes only,
     # and any malicious usage of this tool is prohibited.
     #
-    # Author: Your Name, Version 1.0
+    # Author: Ajay, Version 1.0
     # ----------------------------------------------------------------------------------------------
     """
     print(ascii_art)

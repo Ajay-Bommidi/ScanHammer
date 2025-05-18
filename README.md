@@ -71,7 +71,7 @@ Follow these steps to set up ScanHammer on Kali Linux:
 
 
 Clone the Repository:
-#bash
+
 git clone https://github.com/Ajay-Bommidi/ScanHammer.git
 cd ScanHammer
 

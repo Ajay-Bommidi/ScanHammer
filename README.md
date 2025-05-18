@@ -71,35 +71,33 @@ Follow these steps to set up ScanHammer on Kali Linux:
 
 
 Clone the Repository:
-
+```bash
 git clone https://github.com/Ajay-Bommidi/ScanHammer.git
 cd ScanHammer
-
-
-
+```
 Install System Dependencies:
+```bash
 
 sudo apt update
 sudo apt install nmap apache2-utils curl
-
+```
 
 
 Set Up Python Virtual Environment:
-
-python3 -m venv venv
-source venv/bin/activate
-
-
+```bash
+sudo python3 -m venv myenv
+source myenv/bin/activate
+```
 
 Install Python Dependencies:
-
+```bash
 pip install -r requirements.txt
-
+```
 Contents of requirements.txt:
-
+```bash
 colorama==0.4.6
 art==6.2
-
+```
 
 
 Verify Scripts: Ensure main.py, NETWORK-SCANNER/NetScanner.sh, and DOS-TOOL/humangous.sh are executable:
@@ -109,169 +107,67 @@ chmod +x NETWORK-SCANNER/NetScanner.sh DOS-TOOL/humangous.sh
 🚀 Usage
 
 Run ScanHammer via the Python CLI interface:
-
+```bash
 source venv/bin/activate
 python3 main.py
-
+```
 Menu Options
 
-
-
-
-
 Network Scanning:
-
-
-
-
-
-Runs NETWORK-SCANNER/NetScanner.sh (requires sudo).
-
-
-
+Runs NetScanner.sh (requires sudo).
 Prompts for a target IP or range (e.g., 192.168.1.0/24).
-
-
-
 Outputs active hosts, open ports, and service details.
-
-
-
 Command (if run separately):
-
-sudo ./NETWORK-SCANNER/NetScanner.sh
+sudo ./NetScanner.sh
 
 
 
 DoS Attack:
-
-
-
-
-
 Runs DOS-TOOL/humangous.sh (no sudo needed).
-
-
-
 Prompts for target URL (e.g., http://localhost), attack duration, and type (HTTP Flood or Slowloris).
-
-
-
 Displays real-time attack progress and “Successfully Down” if the target becomes unresponsive.
-
-
-
 Command (if run separately):
-
-./DOS-TOOL/humangous.sh
-
-
+./humangous.sh
 
 Exit:
-
-
-
-
 
 Closes the CLI.
 
 Example Commands
-
-
-
-
-
 Network Scanning:
-
-sudo ./NETWORK-SCANNER/NetScanner.sh
+sudo .NetScanner.sh
 Enter target IP or range: 192.168.1.0/24
-
 Output: List of active hosts, ports, and services.
 
-
-
 DoS Attack (HTTP Flood):
-
-./DOS-TOOL/humangous.sh
+./humangous.sh
 Enter target URL: http://localhost
 Enter attack duration: 60
 Select attack type: 1
-
 Output: Attack progress, “Successfully Down” if target fails.
 
 🧪 Testing Environment
 
 For safe and ethical testing:
-
-
-
-
-
 Set Up a Local Server:
-
 sudo apt install apache2
 sudo systemctl start apache2
-
 Test DoS attacks against http://localhost.
-
-
-
 Use a Virtual Machine:
-
-
-
-
-
 Run ScanHammer in a Kali Linux VM to isolate network scanning and attacks.
-
-
-
 Example: Use VirtualBox with a local network for scanning.
-
-
-
 Capture Screenshots:
-
-
-
-
-
 Take screenshots of:
-
-
-
-
-
 CLI menu (main.py).
-
-
-
 Network scanning output (e.g., nmap results).
-
-
-
 DoS attack progress and “Successfully Down” message.
-
-
-
 Upload to a GitHub issue or include in a pull request to enhance this README.
 
 🔒 Ethical Considerations
 
 ScanHammer is designed for educational purposes and authorized testing only. Key safeguards:
-
-
-
-
-
 Disclaimers: Prominent warnings in the CLI and scripts.
-
-
-
 Controlled Attacks: Duration limits prevent prolonged impact.
-
-
-
 Permission Checks: Prompts for user confirmation before attacks.
 
 Legal Warning: Unauthorized scanning or attacking systems is illegal under laws like the Computer Fraud and Abuse Act (CFAA) in the US or equivalent regulations worldwide. Always obtain explicit permission from system owners.
@@ -281,21 +177,8 @@ Legal Warning: Unauthorized scanning or attacking systems is illegal under laws 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 📬 Contact
-
-
-
-
-
 Author: Ajay Bommidi
-
-
-
 GitHub: Ajay-Bommidi
-
-
-
 Email: ajaynaidu641@gmail.com
-
-
 
 ⭐ Star this repository if you find ScanHammer useful! Your support helps showcase this project to recruiters and the cybersecurity community.

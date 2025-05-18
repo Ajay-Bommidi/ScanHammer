@@ -180,6 +180,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 Author: Ajay Bommidi
 GitHub: Ajay-Bommidi
 Email: ajaynaidu641@gmail.com
-Limnkedin: https://www.linkedin.com/in/ajay-bommidi-88b74b279
+
+Linkedin: https://www.linkedin.com/in/ajay-bommidi-88b74b279
 
 ⭐ Star this repository if you find ScanHammer useful! Your support helps showcase this project to recruiters and the cybersecurity community.

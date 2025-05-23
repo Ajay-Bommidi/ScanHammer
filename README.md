@@ -1,6 +1,9 @@
 ScanHammer
+![image (1)](https://github.com/user-attachments/assets/d1516bbb-8030-402f-8894-125ea7cf13fa)
+
  
 ScanHammer is a powerful, Python-driven cybersecurity tool inspired by Nmap and Hulk, designed for educational purposes to perform network reconnaissance and simulate Denial of Service (DoS) attacks. It combines intuitive menu-driven options with robust Bash scripts to deliver detailed network scanning and attack simulation capabilities, making it an essential tool for security researchers, penetration testers, and students learning ethical hacking.
+
 
 🚀 Why ScanHammer?
 In today’s cybersecurity landscape, understanding network vulnerabilities and attack vectors is critical. ScanHammer empowers users to:
